@@ -1,0 +1,16 @@
+{
+  "name": "smartpay-monorepo",
+  "version": "1.0.0",
+  "description": "SmartPay - Unified Frontend and Backend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev || node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd backend && npm run build --if-present && cd ../frontend && npm run build",
+    "deploy": "node scripts/deploy.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
