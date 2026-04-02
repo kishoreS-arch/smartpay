@@ -1,0 +1,199 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg-primary);
+  position: relative;
+  padding: 20px;
+}
+
+.login-orb {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.login-orb.pink { 
+  background: rgba(236, 72, 153, 0.3);
+  top: 10%;
+  right: 15%;
+}
+
+.login-orb.blue { 
+  background: var(--accent-glow);
+  bottom: 10%;
+  left: 15%;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.icon-badge {
+  background: var(--accent);
+  color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.input-group {
+  background: var(--input-bg);
+  border: var(--card-border-width) solid var(--glass-border);
+  border-radius: 12px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.prefix {
+  font-weight: 700;
+  color: var(--accent);
+  border-right: 1px solid var(--glass-border);
+  padding-right: 12px;
+}
+
+input {
+  background: none;
+  border: none;
+  color: var(--text-main);
+  font-size: 1.1rem;
+  width: 100%;
+  outline: none;
+}
+
+.full-width {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-box {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 12px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--accent) !important;
+  border-radius: 0 !important;
+}
+
+.resend {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.resend b {
+  color: var(--accent);
+}
+
+
+.btn-google {
+  background: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.btn-google:active {
+  transform: scale(0.98);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-bottom: 24px;
+}
+
+.divider::before, 
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.divider:not(:empty)::before {
+  margin-right: .5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: .5em;
+}
+
+.mpin-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.otp-box.small {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  padding: 10px;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 8px !important;
+}
+
+/* Senior Mode Overrides */
+body.senior-mode .login-card {
+  max-width: 600px;
+}
+
+body.senior-mode .input-group input {
+  font-size: 1.8rem;
+}
+
+.error-banner {
+  background: rgba(239, 68, 68, 0.15); /* Keep slightly transparent */
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  text-align: left;
+}

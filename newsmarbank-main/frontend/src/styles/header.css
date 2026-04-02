@@ -1,0 +1,138 @@
+.page-header {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  height: 64px;
+  z-index: 1000;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  background: var(--accent);
+  color: var(--btn-text);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--text-main), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.mode-switcher-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-switcher {
+  background: var(--input-bg);
+  padding: 4px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  border: var(--card-border-width) solid var(--glass-border);
+}
+
+.lang-select {
+  background: none;
+  border: none;
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.lang-select option {
+  background: var(--bg-secondary);
+  color: var(--text-main);
+}
+
+.mode-switcher {
+  display: flex;
+  background: var(--input-bg);
+  padding: 4px;
+  border-radius: 12px;
+  gap: 4px;
+}
+
+.mode-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.mode-btn:hover {
+  background: var(--input-bg);
+  color: var(--text-main);
+}
+
+.mode-btn.active {
+  background: var(--accent);
+  color: var(--btn-text);
+}
+
+.profile-btn {
+  background: var(--input-bg);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+}
+
+/* Override for Senior Mode */
+body.senior-mode .logo-text {
+  -webkit-text-fill-color: var(--text-main);
+  font-size: 2rem;
+}
+
+body.senior-mode .page-header {
+  height: 80px;
+}
+
+body.senior-mode .mode-btn {
+  width: 50px;
+  height: 50px;
+}

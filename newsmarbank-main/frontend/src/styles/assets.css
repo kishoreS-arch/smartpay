@@ -1,0 +1,150 @@
+.assets-container {
+    padding: 100px 20px 120px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.networth-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+
+.donut-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.donut-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.donut-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.donut-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.legend-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.asset-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.asset-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 18px;
+}
+
+.asset-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.asset-info {
+    flex: 1;
+}
+
+.asset-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.asset-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.asset-change {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.asset-change.up { color: var(--success); }
+.asset-change.down { color: var(--danger); }
+
+.metal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.metal-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.metal-icon {
+    color: #f59e0b;
+    margin-bottom: 8px;
+}
+
+.metal-name {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.metal-rate {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.metal-change {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.metal-change.up { color: var(--success); }
+.metal-change.down { color: var(--danger); }
+
+/* Senior Mode */
+body.senior-mode .donut-value { font-size: 2.2rem; }
+body.senior-mode .asset-label { font-size: 1.2rem; }
+body.senior-mode .asset-value { font-size: 1.5rem; }
+body.senior-mode .metal-rate { font-size: 1.8rem; }
+body.senior-mode .donut-wrapper { width: 250px; height: 250px; }

@@ -1,0 +1,84 @@
+{
+  "9876543210": {
+    "_id": "demo_9876543210",
+    "displayName": "SmartPay User",
+    "email": "user_9876543210@smartpay.env",
+    "phone": "9876543210",
+    "balance": 100000,
+    "mpin": "1234",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fOTg3NjU0MzIxMCIsImlhdCI6MTc3NTA2NDE1NSwiZXhwIjoxNzc3NjU2MTU1fQ.7I5ANmGSu0MMrnwskdXJ_LET_eZj6IbHpbUSgkwHLyw"
+  },
+  "5446464545": {
+    "_id": "demo_5446464545",
+    "displayName": "Ashwin",
+    "email": "ashwinkish23@gmail.com",
+    "phone": "5446464545",
+    "balance": 100000,
+    "mpin": "1111",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNTQ0NjQ2NDU0NSIsImlhdCI6MTc3NDk3NTUzMSwiZXhwIjoxNzc3NTY3NTMxfQ.RqqNPFIG3e9NR8fibtAchlOGatuXRvmRVUTtWrX7UrU"
+  },
+  "6544544545": {
+    "_id": "demo_6544544545",
+    "displayName": "SmartBank User",
+    "email": "user_6544544545@smartbank.env",
+    "phone": "6544544545",
+    "balance": 98455,
+    "mpin": "1234",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNjU0NDU0NDU0NSIsImlhdCI6MTc3NTAzODU0NCwiZXhwIjoxNzc3NjMwNTQ0fQ.J3uIx6rOBvNxywgPKCl79wd3frdUBisDv68UMK_k9NA",
+    "transactions": [
+      {
+        "id": "TRX1775061976311",
+        "name": "Starbucks Coffee",
+        "amount": -1545,
+        "status": "Success",
+        "date": "2026-04-01T16:46:16.312Z",
+        "isVerified": false
+      }
+    ]
+  },
+  "7878775754": {
+    "_id": "demo_7878775754",
+    "displayName": "Sri Murugan",
+    "email": "srimurugan7110@gmail.com",
+    "phone": "7878775754",
+    "balance": 100000,
+    "mpin": "8888",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNzg3ODc3NTc1NCIsImlhdCI6MTc3NTA3MjE1OSwiZXhwIjoxNzc3NjY0MTU5fQ.cEvRGF4HNfNQcd-VLX-PhXCNjQB_JOa7cY1STz4GHH8"
+  },
+  "4545645645": {
+    "_id": "demo_4545645645",
+    "displayName": "Priya",
+    "email": "priya2001203@gmail.com",
+    "phone": "4545645645",
+    "balance": 100000,
+    "mpin": "1515",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNDU0NTY0NTY0NSIsImlhdCI6MTc3NTA3MjgyNSwiZXhwIjoxNzc3NjY0ODI1fQ.Mp8tGtfrhoCg2Ywv2SvyvExhd0vP36WffonM32ZJzkM"
+  },
+  "5464544464": {
+    "_id": "demo_5464544464",
+    "displayName": "SmartPay User",
+    "email": "user_5464544464@smartpay.env",
+    "phone": "5464544464",
+    "balance": 100000,
+    "mpin": "8888",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNTQ2NDU0NDQ2NCIsImlhdCI6MTc3NTA3MzI5NCwiZXhwIjoxNzc3NjY1Mjk0fQ.1rLJF5LAe2N4YH36maRmNp0GwZHj3W5MQrUluV7zA1c"
+  },
+  "5544544544": {
+    "_id": "demo_5544544544",
+    "displayName": "SmartPay User",
+    "email": "user_5544544544@smartpay.env",
+    "phone": "5544544544",
+    "balance": 100000,
+    "mpin": "1111",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNTU0NDU0NDU0NCIsImlhdCI6MTc3NTA3MzgwMywiZXhwIjoxNzc3NjY1ODAzfQ.c6Im6sMG9j16v3CQOr6sutuXydVdkyZTQv1aOWuXhbw"
+  },
+  "5754545454": {
+    "_id": "demo_5754545454",
+    "displayName": "SmartPay User",
+    "email": "user_5754545454@smartpay.env",
+    "phone": "5754545454",
+    "balance": 100000,
+    "mpin": "4444",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRlbW9fNTc1NDU0NTQ1NCIsImlhdCI6MTc3NTA3MzgyNywiZXhwIjoxNzc3NjY1ODI3fQ.oQlIpaQmPFR9NKXxCwvEzZ1H-pxdf5VxFu11GbaPxzA"
+  }
+}

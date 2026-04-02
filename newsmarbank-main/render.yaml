@@ -1,0 +1,23 @@
+services:
+  # SmartPay Backend (Express)
+  - type: web
+    name: smartpay-backend
+    runtime: node
+    plan: free # Change to 'standard' for production if needed
+    region: ohio
+    # Crucial for monorepo: we specify the backend directory
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 5001
+      - key: JWT_SECRET
+        generateValue: true # Generates a secure random secret if not provided
+      - key: MONGODB_URI
+        sync: false # Set this in the Render dashboard manually
+      - key: FRONTEND_URL
+        value: https://frontend-dun-seven-oztwr7indp.vercel.app
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health # Matches route in backend/src/app.js

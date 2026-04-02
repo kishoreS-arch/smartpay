@@ -1,0 +1,118 @@
+.statement-container {
+    padding: 100px 20px 120px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.statement-card {
+    padding: 30px 24px;
+}
+
+.statement-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex { display: flex; }
+.align-items-center { align-items: center; }
+.gap-2 { gap: 8px; }
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.option-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.option-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    font-weight: 600;
+}
+
+.custom-dates.row {
+    display: flex;
+    gap: 16px;
+}
+
+.custom-dates .col {
+    flex: 1;
+}
+
+.custom-dates input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+body.senior-mode .custom-dates input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0);
+}
+
+.format-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.format-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--glass-border);
+    padding: 16px;
+    border-radius: 16px;
+    color: var(--text-muted);
+    transition: all 0.2s;
+}
+
+.format-btn.active {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: var(--accent);
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.format-icon {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.format-icon.pdf {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.format-icon.excel {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.statement-summary {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    border-radius: 12px;
+}
+
+/* Senior Mode Overrides */
+body.senior-mode .option-btn { font-size: 1.3rem; padding: 16px; }
+body.senior-mode .format-btn { font-size: 1.5rem; padding: 20px; }
+body.senior-mode .statement-summary p { font-size: 1.2rem; }
+body.senior-mode .statement-icon { width: 100px; height: 100px; }
+body.senior-mode .custom-dates input[type="date"] { font-size: 1.4rem; padding: 16px; }

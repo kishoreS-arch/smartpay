@@ -1,0 +1,164 @@
+.budget-container {
+  padding: 100px 20px 120px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ai-insight-card {
+  padding: 20px;
+  background: var(--glass);
+  border-left: 4px solid var(--success);
+  margin-bottom: 32px;
+}
+
+.insight-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.text-yellow {
+  color: var(--accent);
+}
+
+.insight-header h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.insight-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+.insight-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.mt-4 { margin-top: 32px; }
+.mt-2 { margin-top: 8px; }
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+
+.budget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.budget-item {
+  padding: 16px 20px;
+}
+
+.budget-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.budget-cat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.budget-amounts {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.progress-bg {
+  width: 100%;
+  height: 12px;
+  background: var(--input-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 1s ease-out;
+}
+
+.progress-fill.warning {
+  background: var(--accent);
+}
+
+.progress-fill.danger {
+  background: var(--danger);
+}
+
+.budget-alert {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.budget-alert.warning { color: var(--accent); }
+.budget-alert.danger { color: var(--danger); }
+
+.goal-card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.goal-icon {
+  background: var(--input-bg);
+  color: var(--accent);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goal-details {
+  flex: 1;
+}
+
+.goal-details h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.goal-details p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Senior Mode */
+body.senior-mode .insight-header h4 { font-size: 1.6rem; }
+body.senior-mode .insight-text { font-size: 1.4rem; }
+body.senior-mode .budget-cat { font-size: 1.4rem; }
+body.senior-mode .budget-amounts { font-size: 1.2rem; }
+body.senior-mode .progress-bg { height: 20px; }
+body.senior-mode .goal-details h4 { font-size: 1.5rem; }

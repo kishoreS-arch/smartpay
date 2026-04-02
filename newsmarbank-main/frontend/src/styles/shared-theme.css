@@ -1,0 +1,190 @@
+:root {
+  /* Normal Mode (Modern Fintech Pro) */
+  --bg-primary: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  --bg-secondary: #0f172a;
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-blur: blur(12px);
+  --card-border-width: 1px;
+  --text-main: #f8fafc;
+  --text-primary: #e2e8f0;
+  --text-muted: rgba(226, 232, 240, 0.7);
+  --accent: #38bdf8;
+  --accent-glow: rgba(14, 165, 233, 0.4);
+  --balance-amount: #38bdf8;
+  --btn-bg: linear-gradient(to right, #0ea5e9, #3b82f6);
+  --btn-shadow: rgba(14, 165, 233, 0.4);
+  --btn-text: #f8fafc;
+  --success: #10b981;
+  --danger: #f43f5e;
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --font-base: 'Inter', system-ui, sans-serif;
+  --text-xl: 1.25rem;
+  --text-lg: 1.125rem;
+  --text-md: 1rem;
+}
+
+body.senior-mode {
+  /* Senior Mode (Clarity & Comfort) */
+  --bg-primary: #fdfbf7;
+  --bg-secondary: #f9fafb;
+  --glass: #ffffff;
+  --glass-border: #cbd5e1;
+  --glass-blur: none;
+  --card-border-width: 2px;
+  --text-main: #001f3f;
+  --text-primary: #001f3f;
+  --text-muted: #334155;
+  --accent: #001f3f;
+  --accent-glow: transparent;
+  --balance-amount: #001f3f;
+  --btn-bg: #001f3f;
+  --btn-shadow: rgba(0, 31, 63, 0.2);
+  --btn-text: #ffffff;
+  --success: #10b981;
+  --danger: #f43f5e;
+  --input-bg: #f8fafc;
+  --font-base: 'Outfit', sans-serif;
+  --text-xl: 2rem;
+  --text-lg: 1.75rem;
+  --text-md: 1.5rem;
+}
+
+body.visual-mode {
+  /* Visual Impairment Mode (Voice-First High Contrast) */
+  --bg-primary: #000000;
+  --bg-secondary: #000000;
+  --glass: #000000;
+  --glass-border: #ffff00;
+  --glass-blur: none;
+  --card-border-width: 3px;
+  --text-main: #ffff00;
+  --text-primary: #ffff00;
+  --text-muted: #ffff00;
+  --accent: #ffff00;
+  --accent-glow: transparent;
+  --balance-amount: #ffff00;
+  --btn-bg: #ffff00;
+  --btn-shadow: transparent;
+  --btn-text: #000000;
+  --success: #ffff00;
+  --danger: #ffff00;
+  --input-bg: #000000;
+  --font-base: 'Outfit', sans-serif;
+  --text-xl: 2.2rem;
+  --text-lg: 2rem;
+  --text-md: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-base);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, font-size 0.2s ease;
+}
+
+body {
+  background: var(--bg-primary);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--card-border-width) solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--btn-shadow);
+}
+
+/* Global Senior Mode Utility Classes */
+body.senior-mode .btn-large {
+  padding: 24px 40px !important;
+  font-size: 1.8rem !important;
+  border-radius: 20px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body.senior-mode .glass-card {
+  padding: 30px !important;
+  border-width: 3px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.senior-mode-ui .page-title {
+  font-size: 2.5rem !important;
+  font-weight: 900 !important;
+  margin-bottom: 24px !important;
+}
+
+.senior-safe-indicator {
+  background: rgba(16, 185, 129, 0.1);
+  padding: 12px 20px;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid var(--success);
+}
+
+.senior-safe-indicator span {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--success);
+}
+
+.senior-mode-ui input {
+  border-width: 3px !important;
+  font-weight: 700 !important;
+}
+
+/* Base Layout Container (Mobile Responsive Constraints) */
+.main-content {
+  padding-top: 85px; /* Offset for PageHeader */
+  padding-bottom: 100px; /* Offset for BottomNav */
+  min-height: 100vh;
+  width: 100%;
+  max-width: 600px; /* Tablet constraint */
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media (max-width: 400px) {
+  .main-content {
+    padding-top: 75px;
+    padding-bottom: 90px;
+  }
+}
+
+
+/* Accessibility Highlight for Visually Impaired Mode double-tap */
+body.visual-mode .vi-btn-highlight {
+  background: white !important;
+  color: black !important;
+  border-color: white !important;
+  box-shadow: 0 0 30px white !important;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}

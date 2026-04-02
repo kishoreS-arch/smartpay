@@ -1,0 +1,144 @@
+.reminders-container {
+  padding: 100px 20px 120px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.alert-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  background: rgba(239, 68, 68, 0.1);
+  border-left: 4px solid var(--danger);
+  color: var(--danger);
+}
+
+.alert-banner.error .alert-content h4 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.alert-banner.error .alert-content p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.reminders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reminder-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 18px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.reminder-card:active {
+  transform: scale(0.98);
+}
+
+.reminder-icon {
+  background: var(--glass);
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.reminder-card.overdue .reminder-icon {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+.reminder-card.due-soon .reminder-icon {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.reminder-info {
+  flex: 1;
+}
+
+.reminder-info h4 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.reminder-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+}
+
+.status-badge.overdue {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--danger);
+}
+
+.status-badge.due-soon {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.reminder-amount {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pay-btn {
+  background: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.pay-btn:hover {
+  background: #4f46e5;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.text-success { color: var(--success); }
+
+.empty-state h3 {
+  margin: 16px 0 8px;
+  color: var(--text-main);
+  font-size: 1.2rem;
+}
+
+/* Senior Mode */
+body.senior-mode .alert-banner h4 { font-size: 1.6rem; }
+body.senior-mode .alert-banner p { font-size: 1.4rem; }
+body.senior-mode .reminder-info h4 { font-size: 1.6rem; }
+body.senior-mode .reminder-amount { font-size: 1.5rem; }
+body.senior-mode .status-badge { font-size: 1.2rem; }
+body.senior-mode .pay-btn { padding: 12px 24px; font-size: 1.4rem; }
+body.senior-mode .reminder-icon { width: 70px; height: 70px; }

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SmartPay</string>
+    <string name="title_activity_main">SmartPay</string>
+    <string name="package_name">com.smartpay.bank</string>
+    <string name="custom_url_scheme">com.smartpay.bank</string>
+</resources>

@@ -1,0 +1,543 @@
+﻿node.exe : Retrieving 
+projectΓÇª
+At C:\Program 
+Files\nodejs\npx.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (R  
+  etrieving projectΓÇª:   
+ String) [], RemoteExc    
+eption
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+Deploying kishores-project
+s-ff05719f/frontend
+Uploading 
+[--------------------] 
+(0.0B/790B)
+Uploading 
+[====================] 
+(790.0B/790B)
+Inspect: https://vercel.co
+m/kishores-projects-ff0571
+9f/frontend/DY7sei7xWGDrZA
+hduUY27T8ZZgwi [3s]
+Production: https://fronte
+nd-gqulreosm-kishores-proj
+ects-ff05719f.vercel.app 
+[3s]
+Building...
+Building: Running build 
+in Washington, D.C., USA 
+(East) ΓÇô iad1
+Building: Build machine 
+configuration: 2 cores, 8 
+GB
+Building: Retrieving list 
+of deployment files...
+Building: Retrieving list 
+of deployment files...
+Building: Downloading 166 
+deployment files...
+Building: Restored build 
+cache from previous 
+deployment (DPDYf4ToXegQF8
+D7SroZMH97d7xz)
+Building: Running "vercel 
+build"
+Building: Vercel CLI 
+50.38.1
+Building: Installing 
+dependencies...
+Building: npm warn 
+deprecated 
+sourcemap-codec@1.4.8: 
+Please use @jridgewell/sou
+rcemap-codec instead
+Building: npm warn 
+deprecated 
+source-map@0.8.0-beta.0: 
+The work that was done in 
+this beta branch won't be 
+included in future 
+versions
+Building: npm warn 
+deprecated glob@11.1.0: 
+Old versions of glob are 
+not supported, and 
+contain widely publicized 
+security vulnerabilities, 
+which have been fixed in 
+the current version. 
+Please update. Support 
+for old versions may be 
+purchased (at exorbitant 
+rates) by contacting 
+i@izs.me
+Building: added 301 
+packages, and removed 3 
+packages in 4s
+Building: 153 packages 
+are looking for funding
+Building: run `npm fund` 
+for details
+Building: Running "npm 
+run build"
+Building: > 
+frontend@0.0.0 build
+Building: > vite build
+Building: vite v8.0.3 
+building client 
+environment for 
+production...
+Building: 
+transforming...Γ£ô 2213 
+modules transformed.
+Building: rendering 
+chunks...
+Building: Γ£ù Build 
+failed in 948ms
+Building: PWA v1.2.0
+Building: mode      
+generateSW
+Building: precache  7 
+entries (300.69 KiB)
+Building: files generated
+Building: dist/sw.js
+Building: 
+dist/workbox-1ef09536.js
+Building: error during 
+build:
+Building: Build failed 
+with 107 errors:
+Building: 
+[MISSING_EXPORT] Error: 
+"jsx" is not exported by "
+__vite-optional-peer-dep:r
+eact/jsx-runtime:framer-mo
+tion".
+Building: Γò¡ΓöÇ[ node_mod
+ules/framer-motion/dist/es
+/components/AnimatePresenc
+e/index.mjs:2:10 ]
+Building: Γöé
+Building: 2 Γöé import { 
+jsx, Fragment } from 
+'react/jsx-runtime';
+Building: Γöé          
+ΓöÇΓö¼ΓöÇ
+Building: Γöé           
+Γò░ΓöÇΓöÇΓöÇ Missing 
+export
+Building: ΓöÇΓöÇΓöÇΓò»
+Building: 
+[MISSING_EXPORT] Error: 
+"Fragment" is not 
+exported by "__vite-option
+al-peer-dep:react/jsx-runt
+ime:framer-motion".
+Building: Γò¡ΓöÇ[ node_mod
+ules/framer-motion/dist/es
+/components/AnimatePresenc
+e/index.mjs:2:15 ]
+Building: Γöé
+Building: 2 Γöé import { 
+jsx, Fragment } from 
+'react/jsx-runtime';
+Building: Γöé             
+  ΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ
+Building: Γöé             
+      Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+Building: ΓöÇΓöÇΓöÇΓò»
+Building: 
+[MISSING_EXPORT] Error: 
+"useMemo" is not exported 
+by "__vite-optional-peer-d
+ep:react:framer-motion".
+Building: Γò¡ΓöÇ[ node_mod
+ules/framer-motion/dist/es
+/components/AnimatePresenc
+e/index.mjs:3:10 ]
+Building: Γöé
+Building: 3 Γöé import { 
+useMemo, useRef, 
+useState, useContext } 
+from 'react';
+Building: Γöé          
+ΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ
+Building: Γöé             
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+Building: ΓöÇΓöÇΓöÇΓò»
+Building: 
+[MISSING_EXPORT] Error: 
+"useRef" is not exported 
+by "__vite-optional-peer-d
+ep:react:framer-motion".
+Building: Γò¡ΓöÇ[ node_mod
+ules/framer-motion/dist/es
+/components/AnimatePresenc
+e/index.mjs:3:19 ]
+Building: Γöé
+Building: 3 Γöé import { 
+useMemo, useRef, 
+useState, useContext } 
+from 'react';
+Building: Γöé             
+      ΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇ
+Building: Γöé             
+         Γò░ΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+Building: ΓöÇΓöÇΓöÇΓò»
+Building: 
+[MISSING_EXPORT] Error: 
+"useState" is not 
+exported by "__vite-option
+al-peer-dep:react:framer-m
+otion".
+Building: Γò¡ΓöÇ[ node_mod
+ules/framer-motion/dist/es
+/components/AnimatePresenc
+e/index.mjs:3:27 ]
+Building: Γöé
+Building: 3 Γöé import { 
+useMemo, useRef, 
+useState, useContext } 
+from 'react';
+Building: Γöé             
+              
+ΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ
+Building: Γöé             
+                  
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+Building: ΓöÇΓöÇΓöÇΓò»
+Building: ...
+Building: at aggregateBind
+ingErrorsIntoJsError (file
+:///vercel/path0/node_modu
+les/rolldown/dist/shared/e
+rror-BLhcSyeg.mjs:48:18)
+Building: at 
+unwrapBindingResult (file:
+///vercel/path0/node_modul
+es/rolldown/dist/shared/er
+ror-BLhcSyeg.mjs:18:128)
+Building: at #build (file:
+///vercel/path0/node_modul
+es/rolldown/dist/shared/ro
+lldown-build-CPrIX9V6.mjs:
+3313:34)
+Building: at async 
+buildEnvironment (file:///
+vercel/path0/node_modules/
+vite/dist/node/chunks/node
+.js:32849:64)
+Building: at async 
+Object.build (file:///verc
+el/path0/node_modules/vite
+/dist/node/chunks/node.js:
+33271:19)
+Building: at async 
+Object.buildApp (file:///v
+ercel/path0/node_modules/v
+ite/dist/node/chunks/node.
+js:33268:153)
+Building: at async 
+CAC.<anonymous> (file:///v
+ercel/path0/node_modules/v
+ite/dist/node/cli.js:778:3
+) {
+Building: errors: 
+[Getter/Setter]
+Building: }
+Building: Error: Command 
+"npm run build" exited 
+with 1
+2026-04-01T21:27:37.735Z  
+Running build in 
+Washington, D.C., USA 
+(East) ΓÇô iad1
+2026-04-01T21:27:37.735Z  
+Build machine 
+configuration: 2 cores, 8 
+GB
+2026-04-01T21:27:37.855Z  
+Retrieving list of 
+deployment files...
+2026-04-01T21:27:38.392Z  
+Downloading 166 
+deployment files...
+2026-04-01T21:27:39.332Z  
+Restored build cache from 
+previous deployment (DPDYf
+4ToXegQF8D7SroZMH97d7xz)
+2026-04-01T21:27:39.655Z  
+Running "vercel build"
+2026-04-01T21:27:40.256Z  
+Vercel CLI 50.38.1
+2026-04-01T21:27:40.755Z  
+Installing dependencies...
+2026-04-01T21:27:42.859Z  
+npm warn deprecated 
+sourcemap-codec@1.4.8: 
+Please use @jridgewell/sou
+rcemap-codec instead
+2026-04-01T21:27:43.824Z  
+npm warn deprecated 
+source-map@0.8.0-beta.0: 
+The work that was done in 
+this beta branch won't be 
+included in future 
+versions
+2026-04-01T21:27:44.093Z  
+npm warn deprecated 
+glob@11.1.0: Old versions 
+of glob are not 
+supported, and contain 
+widely publicized 
+security vulnerabilities, 
+which have been fixed in 
+the current version. 
+Please update. Support 
+for old versions may be 
+purchased (at exorbitant 
+rates) by contacting 
+i@izs.me
+2026-04-01T21:27:45.111Z  
+2026-04-01T21:27:45.112Z  
+added 301 packages, and 
+removed 3 packages in 4s
+2026-04-01T21:27:45.112Z  
+2026-04-01T21:27:45.112Z  
+153 packages are looking 
+for funding
+2026-04-01T21:27:45.113Z  
+run `npm fund` for details
+2026-04-01T21:27:45.156Z  
+Running "npm run build"
+2026-04-01T21:27:45.257Z  
+2026-04-01T21:27:45.258Z  
+> frontend@0.0.0 build
+2026-04-01T21:27:45.258Z  
+> vite build
+2026-04-01T21:27:45.258Z  
+2026-04-01T21:27:45.549Z  
+vite v8.0.3 building 
+client environment for 
+production...
+2026-04-01T21:27:46.289Z  
+transforming...Γ£ô 2213 
+modules transformed.
+2026-04-01T21:27:46.387Z  
+rendering chunks...
+2026-04-01T21:27:46.499Z  
+Γ£ù Build failed in 948ms
+2026-04-01T21:27:48.553Z  
+2026-04-01T21:27:48.554Z  
+PWA v1.2.0
+2026-04-01T21:27:48.554Z  
+mode      generateSW
+2026-04-01T21:27:48.554Z  
+precache  7 entries 
+(300.69 KiB)
+2026-04-01T21:27:48.554Z  
+files generated
+2026-04-01T21:27:48.554Z  
+dist/sw.js
+2026-04-01T21:27:48.554Z  
+dist/workbox-1ef09536.js
+2026-04-01T21:27:48.556Z  
+error during build:
+2026-04-01T21:27:48.556Z  
+Build failed with 107 
+errors:
+2026-04-01T21:27:48.556Z  
+2026-04-01T21:27:48.556Z  
+[MISSING_EXPORT] Error: 
+"jsx" is not exported by "
+__vite-optional-peer-dep:r
+eact/jsx-runtime:framer-mo
+tion".
+2026-04-01T21:27:48.556Z  
+Γò¡ΓöÇ[ node_modules/frame
+r-motion/dist/es/component
+s/AnimatePresence/index.mj
+s:2:10 ]
+2026-04-01T21:27:48.556Z  
+Γöé
+2026-04-01T21:27:48.557Z  
+2 Γöé import { jsx, 
+Fragment } from 
+'react/jsx-runtime';
+2026-04-01T21:27:48.557Z  
+Γöé          ΓöÇΓö¼ΓöÇ
+2026-04-01T21:27:48.557Z  
+Γöé           
+Γò░ΓöÇΓöÇΓöÇ Missing 
+export
+2026-04-01T21:27:48.557Z  
+ΓöÇΓöÇΓöÇΓò»
+2026-04-01T21:27:48.557Z  
+2026-04-01T21:27:48.557Z  
+[MISSING_EXPORT] Error: 
+"Fragment" is not 
+exported by "__vite-option
+al-peer-dep:react/jsx-runt
+ime:framer-motion".
+2026-04-01T21:27:48.557Z  
+Γò¡ΓöÇ[ node_modules/frame
+r-motion/dist/es/component
+s/AnimatePresence/index.mj
+s:2:15 ]
+2026-04-01T21:27:48.557Z  
+Γöé
+2026-04-01T21:27:48.557Z  
+2 Γöé import { jsx, 
+Fragment } from 
+'react/jsx-runtime';
+2026-04-01T21:27:48.558Z  
+Γöé               
+ΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ
+2026-04-01T21:27:48.558Z  
+Γöé                   
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+2026-04-01T21:27:48.558Z  
+ΓöÇΓöÇΓöÇΓò»
+2026-04-01T21:27:48.558Z  
+2026-04-01T21:27:48.558Z  
+[MISSING_EXPORT] Error: 
+"useMemo" is not exported 
+by "__vite-optional-peer-d
+ep:react:framer-motion".
+2026-04-01T21:27:48.558Z  
+Γò¡ΓöÇ[ node_modules/frame
+r-motion/dist/es/component
+s/AnimatePresence/index.mj
+s:3:10 ]
+2026-04-01T21:27:48.559Z  
+Γöé
+2026-04-01T21:27:48.559Z  
+3 Γöé import { useMemo, 
+useRef, useState, 
+useContext } from 'react';
+2026-04-01T21:27:48.561Z  
+Γöé          
+ΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ
+2026-04-01T21:27:48.561Z  
+Γöé             
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+2026-04-01T21:27:48.561Z  
+ΓöÇΓöÇΓöÇΓò»
+2026-04-01T21:27:48.561Z  
+2026-04-01T21:27:48.561Z  
+[MISSING_EXPORT] Error: 
+"useRef" is not exported 
+by "__vite-optional-peer-d
+ep:react:framer-motion".
+2026-04-01T21:27:48.561Z  
+Γò¡ΓöÇ[ node_modules/frame
+r-motion/dist/es/component
+s/AnimatePresence/index.mj
+s:3:19 ]
+2026-04-01T21:27:48.561Z  
+Γöé
+2026-04-01T21:27:48.562Z  
+3 Γöé import { useMemo, 
+useRef, useState, 
+useContext } from 'react';
+2026-04-01T21:27:48.562Z  
+Γöé                   
+ΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇ
+2026-04-01T21:27:48.562Z  
+Γöé                      
+Γò░ΓöÇΓöÇΓöÇΓöÇ Missing 
+export
+2026-04-01T21:27:48.562Z  
+ΓöÇΓöÇΓöÇΓò»
+2026-04-01T21:27:48.562Z  
+2026-04-01T21:27:48.563Z  
+[MISSING_EXPORT] Error: 
+"useState" is not 
+exported by "__vite-option
+al-peer-dep:react:framer-m
+otion".
+2026-04-01T21:27:48.563Z  
+Γò¡ΓöÇ[ node_modules/frame
+r-motion/dist/es/component
+s/AnimatePresence/index.mj
+s:3:27 ]
+2026-04-01T21:27:48.563Z  
+Γöé
+2026-04-01T21:27:48.563Z  
+3 Γöé import { useMemo, 
+useRef, useState, 
+useContext } from 'react';
+2026-04-01T21:27:48.568Z  
+Γöé                       
+    
+ΓöÇΓöÇΓöÇΓöÇΓö¼ΓöÇΓöÇΓöÇ
+2026-04-01T21:27:48.568Z  
+Γöé                       
+        
+Γò░ΓöÇΓöÇΓöÇΓöÇΓöÇ 
+Missing export
+2026-04-01T21:27:48.568Z  
+ΓöÇΓöÇΓöÇΓò»
+2026-04-01T21:27:48.568Z  
+2026-04-01T21:27:48.568Z  
+...
+2026-04-01T21:27:48.568Z  
+at aggregateBindingErrorsI
+ntoJsError (file:///vercel
+/path0/node_modules/rolldo
+wn/dist/shared/error-BLhcS
+yeg.mjs:48:18)
+2026-04-01T21:27:48.568Z  
+at unwrapBindingResult (fi
+le:///vercel/path0/node_mo
+dules/rolldown/dist/shared
+/error-BLhcSyeg.mjs:18:128
+)
+2026-04-01T21:27:48.568Z  
+at #build (file:///vercel/
+path0/node_modules/rolldow
+n/dist/shared/rolldown-bui
+ld-CPrIX9V6.mjs:3313:34)
+2026-04-01T21:27:48.568Z  
+at async buildEnvironment 
+(file:///vercel/path0/node
+_modules/vite/dist/node/ch
+unks/node.js:32849:64)
+2026-04-01T21:27:48.568Z  
+at async Object.build (fil
+e:///vercel/path0/node_mod
+ules/vite/dist/node/chunks
+/node.js:33271:19)
+2026-04-01T21:27:48.568Z  
+at async Object.buildApp (
+file:///vercel/path0/node_
+modules/vite/dist/node/chu
+nks/node.js:33268:153)
+2026-04-01T21:27:48.568Z  
+at async CAC.<anonymous> (
+file:///vercel/path0/node_
+modules/vite/dist/node/cli
+.js:778:3) {
+2026-04-01T21:27:48.568Z  
+errors: [Getter/Setter]
+2026-04-01T21:27:48.569Z  
+}
+2026-04-01T21:27:48.626Z  
+Error: Command "npm run 
+build" exited with 1
+https://frontend-gqulreosm-kishores-projects-ff05719f.vercel.app

@@ -1,0 +1,73 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 600px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 1000;
+  border-radius: 24px;
+}
+
+.nav-item {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: var(--accent);
+}
+
+.scan-btn {
+  position: relative;
+  top: -25px;
+}
+
+.scan-icon-wrapper {
+  background: var(--accent);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px var(--accent-glow);
+  transition: transform 0.3s ease;
+}
+
+.scan-icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+/* Senior Mode */
+body.senior-mode .bottom-nav {
+  height: 100px !important;
+  bottom: 10px !important;
+  border: 3px solid var(--glass-border) !important;
+}
+
+body.senior-nav .nav-item {
+  gap: 8px !important;
+}
+
+body.senior-mode .nav-item span {
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+}
+
+body.senior-mode .nav-item svg {
+  width: 36px !important;
+  height: 36px !important;
+}
